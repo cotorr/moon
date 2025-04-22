@@ -83,7 +83,7 @@ body {
 }
 
 .about-title {
-  font-size: 95px;
+  font-size: 90px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -112,14 +112,13 @@ body {
 
 .mission-content {
   background-color: #2F2D37;
-  padding: 100px 80px;
+  padding: 100px;
   color: white;
 }
 
-.mission-content {
-  background-color: #2B2A33;
-  padding: 100px 80px;
-  color: white;
+.mission-wrapper {
+  width: 1500px;
+  margin: 0 auto;
 }
 
 .missions-header {
@@ -128,32 +127,59 @@ body {
 
 
 .missions-title {
-  font-size: 95px;
+  font-size: 110px;
   font-weight: bold;
   margin: 0 0 10px 0;
 }
 
 .missions-subtitle {
-  font-size: 20px;
+  font-size: 34px;
 }
 
-.missions-1,
-.missions-2 {
+.missions-flex {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 63px;
 }
 
+.missions-top,
+.missions-row {
+  position: relative;
+}
 
-.missions-1 img,
+.missions-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mission-text-top {
+  position: absolute;
+  top: 36%;
+  right: 37%;
+  transform: translateY(-50%);
+}
+
+.mission-text-bottom {
+  position: absolute;
+  top: 28%;
+  left: 23%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.missions-1 img {
+  width: 750px;
+}
+
 .missions-2 img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  width: 500px;
 }
 
-.mission-text h3 {
-  font-size: 18px;
+.mission-text-bottom h3,
+.mission-text-top h3 {
+  font-size: 32px;
   margin: 10px 0;
 }
 
@@ -172,9 +198,10 @@ body {
 }
 
 .today-title {
-  font-size: 95px;
+  font-size: 110px;
   text-align: center;
   margin-top: 100px;
+  font-weight: bold;
 }
 
 .today-content {
@@ -191,4 +218,25 @@ body {
 .moon-info {
   display: flex;
   justify-content: space-between;
+}
+
+.subject-content h2 {
+  font-size: 95px;
+  font-weight: bold;
+}
+
+.subject-content {
+  padding: 100px 80px;
+}
+.subject-card{
+  background-color: #000;
+  border-radius: 44px;
+  padding: 116px 20px;
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-boxs{
+  display: flex;
 }
