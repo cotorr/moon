@@ -48,7 +48,7 @@ body {
 
 .about-section {
   position: relative;
-  margin: 100px 0;
+  margin: 160px 0;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 54px;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -119,7 +119,7 @@ body {
 }
 
 .mission-wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -130,7 +130,8 @@ body {
 .missions-title {
   font-size: 110px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+  padding-top: 100px;
 }
 
 .missions-subtitle {
@@ -176,6 +177,7 @@ body {
 
 .missions-2 img {
   width: 500px;
+  margin-bottom: 100px;
 }
 
 .mission-text-bottom h3,
@@ -240,9 +242,10 @@ body {
 .subject-content h2 {
   font-size: 95px;
   font-weight: bold;
-  padding-left: 84px;
+  padding-left: 253px;
+  padding-top: 102px;
+  padding-bottom: 80px;
 }
-
 
 .subject-background img {
   position: absolute;
@@ -271,6 +274,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  margin-bottom: 130px;
 }
 
 .subject-textbox {
@@ -318,7 +322,6 @@ body {
 
 .subject-bottom {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   width: 100%;
   align-items: flex-start;
