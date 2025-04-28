@@ -124,7 +124,7 @@ body {
 }
 
 .missions-header {
-  margin-bottom: 60px;
+  margin-bottom: 145px;
 }
 
 .missions-title {
@@ -163,7 +163,7 @@ body {
 
 .mission-text-bottom {
   position: absolute;
-  top: 28%;
+  top: 20%;
   left: 23%;
   transform: translateY(-50%);
   display: flex;
@@ -388,3 +388,4 @@ body {
   width: 24px;
   height: 24px;
 }
+

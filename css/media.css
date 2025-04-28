@@ -1,0 +1,46 @@
+@media (max-width:1800px) {
+    .mission-text-top {
+        right: 50%;
+    }
+}
+
+@media (max-width:1600px) {
+    .about-title {
+        font-size: 80px;
+    }
+
+    .missions-subtitle {
+        font-size: 28px;
+    }
+
+    .today-title,
+    .missions-title {
+        font-size: 100px;
+    }
+
+    .subject-card {
+        padding: 45px 0 0 0;
+        width: 300px;
+    }
+
+    .subject-textbox h3 {
+        font-size: 40px;
+    }
+
+    .subject-textbox p {
+        font-size: 18px;
+    }
+
+    .subject-card>img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mission-text-bottom {
+        left: 33%;
+    }
+}
+
+@media (max-width: 1450px) {
+   
+  }
