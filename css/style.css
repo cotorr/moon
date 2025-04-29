@@ -12,6 +12,8 @@ body {
 .moon {
   position: relative;
   height: 100vh;
+  background-image: url(../img/moon.png);
+  background-size: cover;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -26,12 +28,6 @@ body {
 
 }
 
-.video {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  transform: scaleX(-1);
-}
 
 .expedition {
   font-size: 24px;
@@ -84,7 +80,6 @@ body {
 
 .about-img img {
   width: 500px;
-  /* height: auto; */
   display: block;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
