@@ -2,13 +2,31 @@
     .mission-text-top {
         right: 50%;
     }
+
+    .subject-box {
+        width: 300px;
+    }
+
+    .subject-card {
+        border-radius: 44px;
+    }
+
+    .subject-card h3 {
+        font-size: 34px;
+    }
+
+    .subject-row,
+    .subject-boxs {
+        gap: 60px;
+    }
+
+    .subject-card>img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (max-width:1600px) {
-    .about-title {
-        font-size: 80px;
-    }
-
     .missions-subtitle {
         font-size: 28px;
     }
@@ -16,24 +34,6 @@
     .today-title,
     .missions-title {
         font-size: 100px;
-    }
-
-    .subject-card {
-        padding: 45px 0 0 0;
-        width: 300px;
-    }
-
-    .subject-textbox h3 {
-        font-size: 40px;
-    }
-
-    .subject-textbox p {
-        font-size: 18px;
-    }
-
-    .subject-card>img {
-        width: 200px;
-        height: 200px;
     }
 
     .mission-text-bottom {
@@ -52,14 +52,6 @@
 
     .today-title {
         font-size: 95px;
-    }
-
-    .about-img img {
-        width: 470px;
-    }
-
-    .about-title {
-        font-size: 70px;
     }
 
     .missions-title {
@@ -87,38 +79,75 @@
         margin-bottom: 80px;
     }
 
-
-    .subject-card {
+    .subject-box {
         width: 250px;
     }
 
-    .subject-textbox h3 {
-        font-size: 33px;
-    }
-
-    .subject-textbox p {
-        font-size: 16px;
-    }
-
     .subject-card>img {
-        width: 170px;
-        height: 170px;
+        width: 200px;
+        height: 200px;
     }
 
-    .subject-bottom figure img {
-        height: 15px;
+    .subject-card h3 {
+        font-size: 32px;
     }
-    .next-btn {
+
+    .next-btn,
+    .subject-card p {
         font-size: 16px;
     }
 }
 
-
-@media (max-width: 1300px) {}
-
-@media (max-width: 1000px) {
-    .subject-boxs {
-        display: flex;
-        flex-wrap: wrap;
+@media (max-width: 1300px) {
+    .about-title {
+        font-size: 70px;
     }
+
+    .mission-text-top {
+        right: 68%;
+    }
+
+    .mission-text-bottom {
+        left: 44%;
+    }
+
+    .subject-boxs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subject-row {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .subject-box {
+        width: 33%;
+    }
+
+    .subject-row:last-child .subject-box:nth-child(1) {
+        margin-top: none;
+    }
+
+    .subject-content h2 {
+        padding-left: 100px;
+    }
+
+    .fade-slides {
+        width: 525px;
+        height: 774px;
+    }
+
+    .moon-info {
+        width: 43%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    /* .fade-slides { */
+        width: 471px;
+    }
+
+    
 }
