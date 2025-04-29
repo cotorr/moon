@@ -53,18 +53,11 @@ body {
 
 
 .about-section {
+  /* background: url(../img/about-background.png); */
   position: relative;
-  margin: 160px 0;
+  /* padding: 160px 0; */
   overflow: hidden;
-}
-
-.about-background img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  background-size: cover;
 }
 
 .about-content {
@@ -120,7 +113,6 @@ body {
 .mission-content {
   background-color: #2F2D37;
   color: white;
-  margin: 100px 0;
 }
 
 .mission-wrapper {
@@ -237,6 +229,13 @@ body {
   margin-top: 40px;
 }
 
+.moon-date-text {
+  font-size: 25px;
+}
+
+.moon-info {
+  font-size: 20px;
+}
 
 .subject-content {
   position: relative;
@@ -252,21 +251,19 @@ body {
   padding-bottom: 80px;
 }
 
-.subject-background img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.subject-background {
+  background: url(../img/subjectback.png);
   width: 100%;
   height: 100%;
-  z-index: 0;
+  position: absolute;
+  background-size: cover;
 }
-
-
 .subject-boxs {
   display: flex;
   justify-content: center;
   gap: 55px;
   margin-top: 60px;
+  /* flex-wrap: wrap; */
 }
 
 .subject-card {
@@ -283,7 +280,7 @@ body {
 }
 
 .subject-textbox {
-  margin-left: 15px;
+  padding: 16px;
 }
 
 .subject-card h3 {
@@ -393,4 +390,3 @@ body {
   width: 24px;
   height: 24px;
 }
-

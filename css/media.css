@@ -39,8 +39,86 @@
     .mission-text-bottom {
         left: 33%;
     }
+
+    .moon-view img {
+        width: 600px;
+    }
 }
 
 @media (max-width: 1450px) {
-   
-  }
+    .moon-view img {
+        width: 500px;
+    }
+
+    .today-title {
+        font-size: 95px;
+    }
+
+    .about-img img {
+        width: 470px;
+    }
+
+    .about-title {
+        font-size: 70px;
+    }
+
+    .missions-title {
+        font-size: 90px;
+    }
+
+    .missions-subtitle {
+        font-size: 24px;
+    }
+
+    .missions-1 img {
+        width: 700px;
+    }
+
+    .missions-2 img {
+        width: 480px;
+    }
+
+    .mission-text-bottom h3,
+    .mission-text-top h3 {
+        font-size: 26px;
+    }
+
+    .missions-header {
+        margin-bottom: 80px;
+    }
+
+
+    .subject-card {
+        width: 250px;
+    }
+
+    .subject-textbox h3 {
+        font-size: 33px;
+    }
+
+    .subject-textbox p {
+        font-size: 16px;
+    }
+
+    .subject-card>img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .subject-bottom figure img {
+        height: 15px;
+    }
+    .next-btn {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 1000px) {
+    .subject-boxs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

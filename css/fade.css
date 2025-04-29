@@ -1,0 +1,34 @@
+.about-content {
+    display: flex; /* 가로로 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+    position: relative; /* 내부 absolute 포지션 기준 */
+    gap: 50px; /* 이미지와 텍스트 사이 간격 */
+    padding: 100px 20px; /* 상하 여백 추가 (선택사항) */
+}
+
+.fade-slides {
+    width: 570px;
+    height: 810px;
+    position: relative;
+    z-index: 97;
+    overflow: hidden; /* 넘치는 이미지 숨김 */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0;
+    z-index: 1;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 98;
+}
