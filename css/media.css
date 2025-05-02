@@ -24,6 +24,11 @@
         width: 250px;
         height: 250px;
     }
+
+    .about-content {
+        padding: 130px 20px;
+    }
+
 }
 
 @media (max-width:1600px) {
@@ -139,11 +144,198 @@
     }
 
     .moon-info {
-        width: 43%;
+        width: 70%;
     }
 
 }
 
 @media (max-width: 1200px) {
-   
+
+    .fade-slides {
+        width: 450px;
+        height: 620px;
+        margin-left: 20px;
     }
+
+    .about-text {
+        padding-left: 20px;
+    }
+
+    .moon-content {
+        margin-top: 300px;
+    }
+
+    .main-title {
+        font-size: 140px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main-title {
+        font-size: 100px;
+    }
+
+    .about-title {
+        font-size: 50px;
+    }
+
+    .about-desc {
+        font-size: 18px;
+    }
+
+    .missions-title,
+    .today-title,
+    .subject-content h2 {
+        font-size: 70px;
+    }
+
+    .sub-title,
+    .missions-subtitle,
+    .moon-date-text {
+        font-size: 20px;
+    }
+
+
+    .moon-view img {
+        width: 450px;
+    }
+
+    .mission-text-top {
+        right: 48%;
+        top: auto;
+    }
+
+    .missions-1 img {
+        width: 621px;
+        margin-top: 50px;
+    }
+
+    .mission-text-bottom {
+        left: 26%;
+        top: 74%;
+    }
+
+    .subject-card>img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .subject-card {
+        width: 300px;
+    }
+
+    .subject-box {
+        width: none;
+    }
+
+    .subject-row,
+    .subject-boxs {
+        gap: 120px;
+    }
+
+    .main-title {
+        font-size: 100px;
+    }
+
+    .footer-right h3 {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .missions-1 img {
+        width: 480px;
+    }
+
+    .missions-title,
+    .today-title,
+    .subject-content h2 {
+        font-size: 40px;
+    }
+
+    .moon-info,
+    .sub-title,
+    .missions-subtitle,
+    .moon-date-text {
+        font-size: 18px;
+    }
+
+    .subject-card h3 {
+        font-size: 29px;
+    }
+
+    .moon-view img {
+        width: 320px;
+    }
+
+    .subject-row {
+        flex-direction: column;
+        align-items: center;
+        gap: none;
+    }
+
+    .subject-box {
+        width: 90%;
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .missions-1 img,
+    .missions-2 img {
+        width: 400;
+    }
+
+    .subject-card h3,
+    .mission-text-bottom h3,
+    .mission-text-top h3 {
+        font-size: 24px;
+    }
+
+    .mission-btn {
+        padding: 3px 21px;
+    }
+
+    .footer {
+        gap: 10px;
+    }
+
+    .missions-1 img,
+    .missions-2 img {
+        width: 360px;
+    }
+}
+
+
+@media (max-width: 490px) {
+
+    .next-btn,
+    .subject-card p {
+        font-size: 16px;
+
+    }
+
+    .moon-info,
+    .sub-title,
+    .missions-subtitle,
+    .moon-date-text {
+        font-size: 16px;
+    }
+
+    .missions-1 img,
+    .missions-2 img {
+        width: 370px;
+    }
+
+    .subject-card h3,
+    .mission-text-bottom h3,
+    .mission-text-top h3 {
+        font-size: 19px;
+    }
+}
