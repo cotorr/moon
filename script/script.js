@@ -1,3 +1,102 @@
+//나사 프리셋 스타일 
+document.addEventListener("DOMContentLoaded", () => {
+    tsParticles.load("particles-js", {
+        fullScreen: { enable: false },
+        particles: {
+            number: { value: 35 },
+            color: { value: "#ffffff" },
+            opacity: { value: 0.25, random: true },
+            size: { value: 2.5, random: true },
+            move: {
+                enable: true,
+                speed: 0.3,
+                direction: "none",
+                outModes: { default: "out" }
+            }
+        },
+        interactivity: {
+            events: {
+                onHover: { enable: false },
+                onClick: { enable: false }
+            }
+        },
+        background: {
+            color: "transparent"
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    tsParticles.load("particles-js", {
+        fullScreen: { enable: false },
+        background: { color: "transparent" },
+
+        particles: {
+            number: { value: 80 },
+            color: { value: "#ffffff" },
+            opacity: { value: 0.4 },
+            size: { value: 2, random: true },
+            move: {
+                enable: true,
+                speed: 0.3,
+                direction: "none",
+                outModes: { default: "out" }
+            }
+        },
+    });
+});
+
+//시차 프리렛
+document.addEventListener("DOMContentLoaded", () => {
+    // 페이지 로드 완료 후 particles 실행
+    tsParticles.load("particles-mission", {
+        // 🔹 전체화면 설정 해제 → 특정 div 내에서만 효과 적용
+        fullScreen: { enable: false },
+
+        // 🔹 입자 설정 시작
+        particles: {
+            number: { value: 100 }, // 입자 개수 (적당한 별의 수)
+
+            color: { value: "#ffffff" }, // 입자 색 → 흰색 (별빛 느낌)
+
+            shape: { type: "circle" }, // 입자 모양 → 원형
+
+            opacity: {
+                value: 0.4,       // 입자 기본 투명도
+                random: true      // 입자마다 다른 밝기로 보여 반짝임 느낌
+            },
+
+            size: {
+                value: 2,         // 기본 크기 (작게 설정)
+                random: true      // 크기 랜덤 → 자연스러운 별 효과
+            },
+
+            // 🔹 입자 간 연결선 설정
+            links: {
+                enable: true,         // 선 연결 활성화
+                distance: 120,        // 연결 가능한 거리
+                color: "#ffffff",     // 연결선 색상
+                opacity: 0.2,         // 연결선의 투명도 → 강조되지 않게
+                width: 1              // 선 두께
+            },
+
+            // 🔹 움직임 설정
+            move: {
+                enable: true,         // 입자가 움직이도록 설정
+                speed: 0.3,           // 천천히 움직이는 속도 (우주 부유감)
+                direction: "none",    // 랜덤한 방향으로 이동
+                outModes: {
+                    default: "out"      // 밖으로 나가면 삭제되고 새로 생성됨
+                }
+            }
+        },
+
+        // 🔹 고해상도 디스플레이에서 선명하게
+        detectRetina: true
+    });
+});
+
+
 // 페이드 이미지
 let fade = document.querySelectorAll(".slide"); // 여기를 slide로
 let currentFade = 0;
@@ -64,6 +163,36 @@ const moonData = [
         set: '오전 6:00'
     }
 ];
+
+// today 섹션 효과
+document.addEventListener("DOMContentLoaded", () => {
+    tsParticles.load("particles-today", {
+        fullScreen: { enable: false },
+        particles: {
+            number: { value: 60 },
+            color: { value: "#ffffff" },
+            opacity: {
+                value: 0.3,
+                random: true
+            },
+            size: {
+                value: 1.2,
+                random: true
+            },
+            move: {
+                enable: true,
+                speed: 0.1,
+                direction: "none",
+                outModes: { default: "out" }
+            }
+        },
+        detectRetina: true
+    });
+});
+
+
+
+
 
 let current = 0;
 
@@ -149,6 +278,8 @@ function titleText() {
         title.appendChild(span);
     });
 }
+
+
 
 
 
