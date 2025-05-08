@@ -122,5 +122,36 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//글씨 나타나게 
+const title = document.querySelector('.main-title');
+const titleHeight = title.getBoundingClientRect().y;
+
+document.addEventListener('DOMContentLoaded', () => {
+    titleText()
+});
+
+window.addEventListener("scroll", () => {
+    if (titleHeight < window.scrollY) {
+        titleText();
+    }
+});
+
+function titleText() {
+    const text = title.textContent.trim();
+    title.textContent = ''; // 기존 텍스트 비움
+
+    // 한 글자씩 <span>으로 감싸기
+    [...text].forEach((char, i) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.animationDelay = `${i * 0.1}s`;
+        span.classList.add('fade-in-char');
+        title.appendChild(span);
+    });
+}
+
+
+
+
 
 
