@@ -523,3 +523,26 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+/* subject-card */
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.subject-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.subject-card.show {
+  animation: slideUpFade 0.8s forwards;
+}

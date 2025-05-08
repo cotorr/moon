@@ -94,6 +94,33 @@ document.querySelector('.arrow.right').addEventListener('click', () => {
 });
 
 // 초기 렌더
-updateMoon(current);
+
+
+
+//순서대로 
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.subject-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const index = Array.from(cards).indexOf(entry.target); // ✅ DOM 기준 인덱스
+                setTimeout(() => {
+                    entry.target.classList.add('show');
+                }, index * 200);
+            } else {
+                entry.target.classList.remove('show'); // 반복 등장용
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    cards.forEach((card) => {
+        observer.observe(card);
+    });
+});
+
+
 
 
