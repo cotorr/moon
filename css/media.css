@@ -249,6 +249,18 @@
 
 @media (max-width: 768px) {
 
+    .modal-content {
+        padding: 111px 0px;
+    }
+
+    .modal-text h2 {
+        font-size: 30px;
+    }
+
+    .modal-text p {
+        font-size: 15px;
+    }
+
     .moon {
         display: block;
         padding-left: 20px;
@@ -374,6 +386,13 @@
 
 @media (max-width: 490px) {
 
+    .modal-text p {
+        font-size: 12px;
+    }
+    .modal-text h2{
+        font-size: 26px;
+    }
+
     .moon-content {
         margin-top: 150px;
     }
@@ -409,3 +428,5 @@
         font-size: 19px;
     }
 }
+
+/* 반응형 모달  */

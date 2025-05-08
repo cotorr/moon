@@ -445,3 +445,81 @@ body {
   width: 24px;
   height: 24px;
 }
+
+/* 모달 배경 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+}
+
+/* 모달 본체 */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  color: #000;
+  margin: 10% auto;
+  padding: 118px 48px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+
+.modal-text h2 {
+  font-size: 40px;
+  margin-top: -67px;
+}
+
+.modal-text {
+  text-align: center;
+}
+
+.modal-text p {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.modal-text img {
+  width: 350px;
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 39px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
