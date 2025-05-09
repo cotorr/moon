@@ -280,7 +280,55 @@ function titleText() {
 }
 
 
+//about 텍스트 
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
 
+    gsap.from(".about-title", {
+        y: -50,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: ".about-title",
+            start: "top 80%",
+            toggleActions: "play reverse play reverse",
+            markers: false
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 첫 번째 이미지 (missions-1)
+    gsap.from(".missions-1", {
+        opacity: 0,
+        scale: 0.95,
+        duration: 1,
+         delay: 0.9,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".missions-1 img",
+            start: "top 85%",
+            toggleActions: "play reverse play reverse"
+        }
+    });
+
+    // 두 번째 이미지 (missions-2) — 약간 딜레이 느낌
+    gsap.from(".missions-2", {
+        opacity: 0,
+        scale: 0.95,
+        duration: 1,
+        delay: 0.2, // 💡 약간 늦게 등장하는 느낌
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".missions-2 img",
+            start: "top 85%",
+            toggleActions: "play reverse play reverse"
+        }
+    });
+});
 
 
 
