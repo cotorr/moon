@@ -110,7 +110,7 @@ function nextFade() {
 
 
 
-//모달 창 ㄹ
+//모달 창 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("missionModal");
     const btns = document.querySelectorAll(".mission-btn");
@@ -154,14 +154,6 @@ const moonData = [
         rise: '오후 7:03',
         set: '오전 5:12'
     },
-    {
-        img: './img/moon-img3.png',
-        date: '2025년 4월 25일',
-        phase: '하현달 🌘',
-        position: '남서쪽 하늘',
-        rise: '오후 7:58',
-        set: '오전 6:00'
-    }
 ];
 
 // today 섹션 효과
@@ -191,9 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
 let current = 0;
 
 function updateMoon(index) {
@@ -221,9 +210,6 @@ document.querySelector('.arrow.right').addEventListener('click', () => {
     current = (current + 1) % moonData.length;
     updateMoon(current);
 });
-
-// 초기 렌더
-
 
 
 //순서대로 
@@ -306,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
         opacity: 0,
         scale: 0.95,
         duration: 1,
-         delay: 0.9,
+        delay: 0.9,
         ease: "power2.out",
         scrollTrigger: {
             trigger: ".missions-1 img",
